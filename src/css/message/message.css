@@ -1,0 +1,111 @@
+.message {
+  background-color: #0a2756;
+}
+
+.message__container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.message__title {
+  padding-top: 139px;
+  font-size: 60px;
+  line-height: 84px;
+  color: #fff;
+}
+
+.message__form {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  padding-bottom: 100px;
+}
+
+.message__input-container {
+  display: flex;
+  column-gap: 26px;
+}
+
+.message__lable {
+  width: 100%;
+}
+.message__input {
+  outline: none;
+  padding: 12px 0;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.message__input::placeholder {
+  transform: translateX(19px);
+}
+
+.message__textarea {
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  resize: none;
+  border: none;
+  padding: 14px 0;
+}
+
+.message__textarea::placeholder {
+  transform: translateX(20px);
+}
+
+.message__submit {
+  max-width: 241px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.67em;
+  text-transform: uppercase;
+  padding: 25px;
+  background-color: #007dfe;
+  color: #fff;
+  cursor: pointer;
+  align-self: flex-end;
+  border: none;
+}
+
+.message__submit:hover {
+  background-color: #fff;
+  color: #0080ff;
+}
+
+@media (max-width: 1024px) {
+  .message__container {
+    max-width: 627px;
+  }
+
+  .message__input-container {
+    column-gap: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .message__container {
+    max-width: none;
+    padding: 0 20px;
+  }
+
+  .message__title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 56px;
+  }
+
+  .message__input-container {
+    flex-direction: column;
+    row-gap: 27px;
+  }
+
+  .message__submit {
+    align-self: center;
+  }
+}

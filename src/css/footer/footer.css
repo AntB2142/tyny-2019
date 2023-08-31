@@ -1,0 +1,54 @@
+.footer {
+    background-color: #0a2756;
+  }
+  
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 0;
+    padding-bottom: 160px;
+  }
+  
+  .footer__list_link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer__list_item {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer__list_link-email {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  
+  .footer__list_link-tel {
+    font-size: 32px;
+    line-height: 56px;
+  }
+  
+  .footer__list_link-privacy {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 525px) {
+    .footer__list {
+      row-gap: 10px;
+      padding-bottom: 112px;
+    }
+    .footer__list_link-email {
+      font-size: 28px;
+      line-height: 39px;
+    }
+  
+    .footer__list_link-tel {
+      font-size: 22px;
+      line-height: 39px;
+    }
+  }
+  

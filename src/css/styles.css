@@ -1,0 +1,43 @@
+@import url("../fonts/fonts.css");
+@import url("../css/header/header.css");
+@import url("../css/promo/promo.css");
+@import url("../css/speakers/speakers.css");
+@import url("../css/message/message.css");
+@import url("../css/footer/footer.css");
+
+.page {
+  background-color: #fff;
+  margin: 0 auto;
+  font-family: "HelveticaNeueCyr", sans-serif;
+  padding: 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1240px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: none;
+    padding: 0 27px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 20px;
+  }
+}

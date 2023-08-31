@@ -1,0 +1,116 @@
+.header__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+  }
+  
+  .header__logo {
+    z-index: 100;
+  }
+  
+  .header__logo-link {
+    cursor: pointer;
+    font-size: 29px;
+    line-height: 35px;
+    color: #0a2756;
+    white-space: nowrap;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .header__separator {
+    height: 42px;
+    background-color: #c4c4c4;
+  }
+  
+  .header__menu {
+    width: 100%;
+    display: flex;
+  }
+  
+  .header__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .header__social {
+    display: flex;
+    column-gap: 13px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .header__link {
+    color: #0a2756;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .header__reg {
+    border: 1px;
+    border-style: solid;
+    border-color: #007dfe;
+    line-height: 19px;
+    padding: 8px 30px;
+  }
+  
+  .reg__link {
+    color: #007dfe;
+  }
+  
+  .header__burger {
+    width: 32px;
+    height: 21px;
+    display: none;
+    cursor: pointer;
+    background: url("../../img/Burger.svg");
+    z-index: 1;
+  }
+  
+  @media (max-width: 1024px) {
+    .header__wrapper {
+      padding: 16px 0;
+    }
+    .header__separator {
+      display: none;
+    }
+    .header__burger {
+      display: block;
+    }
+    .header__burger.active {
+      background: url("../../img/Close.svg") center/cover no-repeat;
+    }
+  
+    .header__list {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #fff;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      transform: translateY(-150%);
+      opacity: 0;
+    }
+  
+    .header__list.active {
+      transform: translateY(0%);
+      opacity: 1;
+      row-gap: 25px;
+    }
+  }
+  
+  @media (max-width: 525px) {
+    .header__burger {
+      width: 50px;
+    }
+  }
+  
